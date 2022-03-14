@@ -1,0 +1,21 @@
+.orderpage{
+    display: flex;
+    justify-content: space-around;
+    height: 500px;
+    background-color: aquamarine;
+    
+}
+.company{
+border:2px solid red;
+flex: .5 1 auto;
+}
+.items{
+border:2px solid blue;
+flex: .5 1 auto;
+}
+.order{
+display: flex;
+   
+border:2px solid silver;
+flex: .5 1 auto;
+}
