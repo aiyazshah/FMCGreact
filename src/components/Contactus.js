@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './contactusstyle.css'
 function Left() {
   const [text, setText] = useState("");
   const [submit, setSubmit] = useState(false);

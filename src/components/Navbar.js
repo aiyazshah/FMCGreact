@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../App.css";
-export default function Navbar() {
-  const login = () => {
-    document.getElementById("login").style.display = "block";
-  }
+export default function Navbar(props) {
+  const login = props.login;
   return (
     <nav className="bg-green-200 h-12">
       <div className="flex justify-between pt-1">
@@ -37,7 +34,7 @@ export default function Navbar() {
             </Link>
           </ul>
         </div>
-        <button className=" rounded-md text-xl mx-1 pb-1 px-2 text-white bg-green-500 border-2 border-green-900  hover:bg-green-200 hover:text-black" onClick={login} type="submit">Login</button>
+        <button className=" rounded-md text-xl mx-1 pb-1 px-2 text-white bg-green-500 border-2 border-green-900  hover:bg-green-200 hover:text-black" onClick={props.login} type="submit">Login</button>
       </div>
     </nav>
   )

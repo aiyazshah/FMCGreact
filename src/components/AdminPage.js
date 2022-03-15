@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './adminpagestyle.css';
 export default function AdminPage() {
     const partyListArray = ["aiyaz", "aamir", "younis", "irham"];////////
     const itemsObj = [{ itemname: "item1", quantity: "2cs" },
@@ -33,10 +32,10 @@ export default function AdminPage() {
     }
     return (
         <div className="flex bg-green-50 border-2 h-[90vh] pt-6 text-xl border-blue-900">
-            <div className="border-4 border-fuchsia-800 flex-1" >
+            <div className="border border-gray-300 flex-1" >
                 <div className='ml-6 text-center'>
                     <h1 className=''>Select Date</h1>
-                    <input className='w-72' type="date" onChange={handleDate} value={cd} />
+                    <input className='w-96  rounded-lg bg-slate-100' type="date" onChange={handleDate} value={cd} />
                 </div>
                 <div className="ml-6 mt-6 text-center">
                     {selectedParty ? <h3 className='border-2 bg-green-400 text-white'>Order on {cd}</h3> : null}
@@ -46,7 +45,7 @@ export default function AdminPage() {
                     </ul>
                 </div>
             </div>
-            <div className="flex-1 flex flex-col items-center">
+            <div className="flex-1 flex flex-col items-center border border-gray-300">
                 {selectedParty ? <h1 className='text-center'>Order For {selectedParty}</h1> : null}
                 <div className='pt-6'>
                     <table className='text-center border-[3px] border-gray-300 bg-green-100'>
@@ -58,8 +57,8 @@ export default function AdminPage() {
                     </table>
                 </div>
             </div>
-            <div className="flex-1 flex justify-center text-center ">
-                <div>
+            <div className="flex-1 text-center ">
+                <div className='border border-gray-300'>
                     <h1> New Registration Requests</h1>
                     <table className='text-center  border-[3px] border-gray-300 mt-6'>
                         <th className='justify-center'>

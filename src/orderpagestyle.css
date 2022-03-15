@@ -2,8 +2,7 @@
     display: flex;
     justify-content: space-around;
     height: 500px;
-    background-color: aquamarine;
-    
+     
 }
 .company{
 border:2px solid red;
