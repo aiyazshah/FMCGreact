@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 export default function Navbar(props) {
-  const login = props.login;
   return (
     <nav className="bg-green-200 h-12">
       <div className="flex justify-between pt-1">
@@ -34,7 +33,10 @@ export default function Navbar(props) {
             </Link>
           </ul>
         </div>
-        <button className=" rounded-md text-xl mx-1 pb-1 px-2 text-white bg-green-500 border-2 border-green-900  hover:bg-green-200 hover:text-black" onClick={props.login} type="submit">Login</button>
+        <Link to='/login'>
+
+          <button className=" rounded-md text-xl mx-1 pb-1 px-2 text-white bg-green-500 border-2 border-green-900  hover:bg-green-200 hover:text-black" onClick={props.login} type="submit">Login</button>
+        </Link>
       </div>
     </nav>
   )
