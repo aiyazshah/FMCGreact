@@ -19,7 +19,7 @@ export default function About() {
             velit rerum culpa eos! Ut?</p>
         </div>
         <div className="mt-16">
-          <iframe title="" className='m-auto w-3/4' src="https://www.openstreetmap.org/export/embed.html?bbox=74.8057606816292%2C34.1796048355052%2C74.80875402688982%2C34.18090068621603&amp;layer=mapnik&amp;marker=34.180252763348484%2C74.80725735425949"></iframe>
+          <iframe title="" className='m-auto h-96 w-3/4' src="https://www.openstreetmap.org/export/embed.html?bbox=74.8057606816292%2C34.1796048355052%2C74.80875402688982%2C34.18090068621603&amp;layer=mapnik&amp;marker=34.180252763348484%2C74.80725735425949"></iframe>
         </div>
       </div>
 

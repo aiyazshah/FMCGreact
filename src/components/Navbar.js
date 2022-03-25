@@ -38,6 +38,7 @@ export default function Navbar(props) {
           <button className=" rounded-md text-xl mx-1 pb-1 px-2 text-white bg-green-500 border-2 border-green-900  hover:bg-green-200 hover:text-black" onClick={props.login} type="submit">Login</button>
         </Link>
       </div>
+      <hr className='mt-4 h-2 w-full bg-green-400' />
     </nav>
   )
 }
